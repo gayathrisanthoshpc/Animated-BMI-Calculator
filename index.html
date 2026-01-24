@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Animated BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-icons">
+        <span>🏃‍♂️</span>
+        <span>🍎</span>
+        <span>💧</span>
+        <span>🥗</span>
+        <span>🏋️‍♀️</span>
+    </div>
+
+    <div class="container">
+        <h1>  BMI Calculator </h1>
+        
+        <div class="input-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter height">
+        </div>
+
+        <div class="input-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight">
+        </div>
+
+        <button id="calculateBtn">Calculate BMI</button>
+
+        <div class="bmi-result">
+            <p>Your BMI: <span id="bmiValue">0</span></p>
+            <div class="bmi-bar">
+                <div class="bmi-fill" id="bmiFill"></div>
+            </div>
+            <p id="bmiCategory">Category</p>
+            <p class="bmi-emoji" id="bmiEmoji">🙂</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
